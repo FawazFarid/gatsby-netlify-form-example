@@ -35,7 +35,6 @@ export default function Contact() {
       <h1>Contact</h1>
       <form
         name="contact"
-        method="post"
         action="/thanks/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
