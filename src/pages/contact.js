@@ -73,6 +73,26 @@ export default function Contact() {
           <button type="submit">Send</button>
         </p>
       </form>
+      <form
+        name="contact"
+        method="post"
+        action="/thanks/"
+        data-netlify="true"
+        onSubmit={handleSubmit}
+      >
+        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+        <input type="hidden" name="form-name" value="contact" />
+        <p>
+          <label>
+            Your name:
+            <br />
+            <input type="text" name="food" onChange={handleChange} />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     </Layout>
   )
 }
